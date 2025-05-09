@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Idan's test website</title>
+</head>
+<style>
+  body{
+    background-color: aliceblue;
+    margin-left: 20px;
+  }
+  .headline{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+  }
+  .dem{
+    color: blue;
+  }
+.first-para{
+  font-size: 20px;
+}
+.blue-line{
+  color: blue;
+}
+.red-line{
+  color: red;
+}
+.yellow-line{
+  color: rgb(199, 199, 32);
+}
+.red-sq , .blue-sq , .brwon-sq{
+  width: 200px;
+  height: 200px;
+}
+.red-sq{
+  background-color: red;
+}
+.blue-sq{
+  background-color: blue;
+  margin-left: 200px;
+}
+.brwon-sq{
+  background-color: brown;
+  margin-left: 400px;
+}
+.background-div{
+  background-color: bisque;
+  width: 100%;
+  height: 150px;
+}
+.div-hello{
+  background-color: greenyellow;
+  color: black;
+  font-size: 35px;
+}
+.div-world{
+  background-color: red;
+  color: black;
+  font-size: 35px;
+}
+.h-color{
+  color: red;
+}
+.h-size{
+  font-size: 40px;
+}
+.h-whight{
+  font-weight: 800;
+}
+.h-align{
+  text-align: right;
+}
+.box-module1 , .box-module2 , .box-module3{
+  width: 200px;
+  height: 200px;
+}
+.box-module1{
+  background-color: rgb(22, 92, 22);
+  padding: 20px;
+  font-weight: 300;
+  border: black solid 10px;
+}
+.box-module2{
+  background-color: yellow;
+  margin-left: 260px;
+  border: black solid;
+  border-top: black solid 20px;
+  border-bottom: black solid 20px;
+}
+.box-module3{
+  background-color:blueviolet;
+  margin-left: 40px;
+  border: black solid 10px;
+}
+.main-Cascade{
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+  border: purple solid 20px;
+  padding: 20px;
+  color: yellow;
+  font-size: 35px;
+}
+.second-cascade{
+  background-color: red;
+  font-size: 35px;
+  color: white;
+}
+.main-Cascade2{
+  color: yellow;
+  font-size: 35px;
+}
+.second-cascade2{
+  background-color: red;
+  font-size: 35px;
+  color: white;
+}
+.main-position{
+  background-color: blue;
+  width: 500px;
+  height: 300px;
+  margin-left: 500px;
+}
+.second-position{
+  background-color: red;
+  position: absolute;
+  left: 800px;
+  top: 3135px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.display-flex-main1 , .display-flex-main2 , .display-flex-main3{
+width: 200px;
+height: 200px;
+color: white;
+display: inline-block;
+}
+.display-flex-main1{
+background-color: red;
+}
+.display-flex-main2{
+  background-color: blue;
+}
+.display-flex-main3{
+  background-color: green;
+}
+.container-flex{
+  display: flex;
+  gap: 300px;
+}
+.cat-flex , .dog-flex{
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+.cat-flex{
+  background-color: aqua;
+  height: 150px;
+  flex: 0.5;
+}
+.cat-flex > img{
+  float: left;
+  padding: 5px;
+}
+.dog-flex{
+  background-color: blueviolet;
+  flex: 0.5;
+  height: 150px;
+  
+}
+.dog-flex > img{
+  float: left;
+  padding: 5px;
+}
+.flexbox-test-container{
+  display: flex;
+  height: 50px;
+  gap: 20px;
+}
+.flex1 , .flex2 , .flex3 , .flex4{
+  background-color: blue;
+}
+.flex1{
+  flex: 2;
+}
+.flex2{
+  flex: 0.5;
+}
+.flex3{
+  flex: 1;
+}
+.flex4{
+  flex: 1;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(3 , 200px);
+  gap: 30px;
+}
+.grid1 , .grid2 , .grid3 , .grid4 , .grid5 , .grid6{
+  background-color: blue;
+}
+.grid1{
+  grid-column: span 2;
+}
+@media (min-width: 450px) and (max-width: 800px){
+  body{
+    background-color: black;
+  }
+}
+.grid3{
+  width: 350px;
+  justify-self: end;
+  background-color: aquamarine;
+}
+.grid4{
+  width: 350px;
+  justify-self: center;
+  background-color: black;
+}
+.grid5{
+  background-color: blueviolet;
+  width: 150px;
+}
+.flex-direction-main{
+  display: flex;
+  flex-direction: column;
+}
+.flex-direction1 , .flex-direction2 , .flex-direction3 , .flex-direction4 , .flex-direction5 , .flex-direction6{
+  width: 100px;
+  padding: 50px;
+  color: white;
+}
+.flex-direction1{
+  background-color: red;
+}
+.flex-direction2{
+  background-color: blue;
+}
+.flex-direction3{
+  background-color: rgb(112, 112, 3);
+}
+.flex-direction4{
+  background-color: brown;
+}
+.flex-direction5{
+  background-color: purple;
+}
+.flex-direction6{
+  background-color: black;
+}
+</style>
+<body>
+  <h1 class="headline"> Welcom to Idan's Website</h1>
+  <p class="first-para">in this web site we will <span class="dem">demonstrate</span> a few HTML coding with css coding</p><br>
+  <p>in this website we are gonna show you a few options of css coding</p>
+  <h2>1. css selectors "ol" Organazie list</h2>
+  <ol>
+    <li class="blue-line">this is blue line</li> 
+    <li class="red-line">this is red line</li>
+    <li class="yellow-line">this is yellow line</li>
+  </ol>
+  <h2>2. this is div colors sqware's</h2>
+  <div class="red-sq"></div>
+  <div class="blue-sq"></div>
+  <div class="brwon-sq"></div>
+  <br><Br>
+  <h2>3. this is css colors</h2>
+  <div class="background-div">
+    <div class="div-hello">hellow</div><br>
+    <div class="div-world">world</div>
+  </div><br><br>
+  <h2>4. Diffrent font's</h2>
+  <h4 class="h-color">color</h4>
+  <h4 class="h-size">font-size</h4>
+  <h4 class="h-whight">font whight</h4>
+  <h4 class="h-align">text align</h4><br><br>
+  <h2>5. box moduls</h2>
+  <div class="box-module1">A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China. Tigers and leopards are animals that live in China's forests in the north. In the jungles, monkeys swing in the trees and elephants walk through the brush.</div>
+  <div class="box-module2"></div>
+  <div class="box-module3"></div>
+  <h2>CSS Cascade</h2>
+  <div class="main-Cascade">
+    yellow text
+    <div class="second-cascade">
+      white text
+    </div>
+    <div class="main-Cascade2"><br><br>
+      yellow text
+      <div class="second-cascade2">
+        white text
+      </div>
+    </div>
+  </div><br><br>
+  <h2>6.CSS position</h2>
+  <div class="main-position">
+    <div class="second-position">
+    </div>
+  </div><br><br>
+  <h2>7.CSS display</h2>
+    <div class="display-flex-main1">red paragraph</div>
+    <div class="display-flex-main2">blue paragraph</div>
+    <div class="display-flex-main3">green paragraph</div><br><br>
+    <div class="container-flex">
+      <div class="cat-flex"><img src="./cat.jpeg" width="130px" height="130px">Domestic cats are carnivores, or meat-eaters. Many hunt and eat small animals, including birds, mice, and rabbits. They use their claws, which they can draw back or in, and their strong, sharp teeth to catch prey. House cats eat mainly canned or dry food made especially for cats.</div>
+      <div class="dog-flex"><img src="./dog.jpeg" width="130px" height="130px">Highly intelligent, dogs have the capability of expressing their joy and happiness by wagging their tails. They are known to be the most loyal of animals. Dogs can sense your pain and can be your best friend. They can sense emotions, and when you are sad, they become sad and when you are happy, they are happy.</div>
+    </div><br><br>
+    <h2>CSS flex Box</h2>
+  <div class="flexbox-test-container">
+    <div class="flex1"></div>
+    <div class="flex2"></div>
+    <div class="flex3"></div>
+    <div class="flex4"></div>
+  </div><br><br>
+  <h2>CSS Grid</h2>
+  <div class="grid-container">
+    <div class="grid1"></div>
+    <div class="grid2"></div>
+    <div class="grid3"></div>
+    <div class="grid4"></div>
+    <div class="grid5"></div>
+    <div class="grid6"></div>
+  </div><br><br>
+  <h2>flex direction</h2>
+  <div class="flex-direction-main">
+    <div class="flex-direction1">red</div>
+    <div class="flex-direction2">blue</div>
+    <div class="flex-direction3">yellow</div>
+    <div class="flex-direction4">brown</div>
+    <div class="flex-direction5">purple</div>
+    <div class="flex-direction6">black</div>
+  </div><br><br>
+  <h2>8.design buttons</h2>
+  <div>
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
