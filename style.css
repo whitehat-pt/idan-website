@@ -320,23 +320,17 @@ display: block;
 @media (max-width: 768px) {
     .therapy-container,
     .diagnosis-container {
-      flex-direction: column !important;
-      align-items: center;
-      text-align: center;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: flex-start !important;
     }
   
     .therapy-text,
     .diagnosis-text,
     .therapy-image,
     .diagnosis-image {
-      flex: 1 1 100%;
-      max-width: 90%;
-    }
-  
-    .therapy-image img,
-    .diagnosis-image img {
-      width: 100%;
-      height: auto;
+      flex: 1 1 50% !important;
+      max-width: 50% !important;
     }
   }
 .contact-section {
